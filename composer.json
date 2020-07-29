@@ -1,0 +1,15 @@
+{
+    "name": "bling/pp-elektroniczny-nadawca",
+    "description": "Paczka wygenrowana z pliku https://e-nadawca.poczta-polska.pl/websrv/en.wsdl za pomocą wsdltophp/packagegenerator",
+    "require": {
+        "php": ">=7.0.0",
+        "ext-soap": "*",
+        "ext-mbstring": "*",
+        "wsdltophp/packagebase": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bling\\PocztaPolska\\ElektronicznyNadawca\\": "./src/"
+        }
+    }
+}
