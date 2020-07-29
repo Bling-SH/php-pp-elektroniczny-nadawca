@@ -20,8 +20,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 $options = array(
     \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_LOGIN => '',
     \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_PASSWORD => '',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_LOCATION => 'https://en-testwebapi.poczta-polska.pl/websrv/en.php',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'https://en-testwebapi.poczta-polska.pl/websrv/en.wsdl',
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_LOCATION => \Bling\PocztaPolska\ElektronicznyNadawca\Url::API,
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => \Bling\PocztaPolska\ElektronicznyNadawca\Url::WSDL_FILE,
     \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \Bling\PocztaPolska\ElektronicznyNadawca\ClassMap::get(),
 );
 
